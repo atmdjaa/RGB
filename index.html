@@ -1,0 +1,59 @@
+<html lang="id"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>glowing text</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000;
+        }
+        .glowing-text {
+            font-size: 5rem; /* Ukuran teks */
+            color: #fff;
+            text-align: center;
+            animation: glow 2s linear infinite;
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow: 
+                    0 0 5px #ff0000,
+                    0 0 10px #ff0000,
+                    0 0 20px #ff0000,
+                    0 0 30px #ff0000,
+                    0 0 40px #ff0000,
+                    0 0 50px #ff0000,
+                    0 0 60px #ff0000;
+            }
+            50% {
+                text-shadow: 
+                    0 0 10px #00ff00,
+                    0 0 20px #00ff00,
+                    0 0 30px #00ff00,
+                    0 0 40px #00ff00,
+                    0 0 50px #00ff00,
+                    0 0 60px #00ff00,
+                    0 0 70px #00ff00;
+            }
+            100% {
+                text-shadow: 
+                    0 0 5px #0000ff,
+                    0 0 10px #0000ff,
+                    0 0 20px #0000ff,
+                    0 0 30px #0000ff,
+                    0 0 40px #0000ff,
+                    0 0 50px #0000ff,
+                    0 0 60px #0000ff;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="glowing-text">TERSERAH!</div>
+
+
+</body></html>
